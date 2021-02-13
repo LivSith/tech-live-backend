@@ -37,5 +37,19 @@ def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 
+@app.route('/techtalk/api/v1.0/articles', methods=['POST'])
+def create_article():
+    if not request.json or not 'title' in request.json:
+        abort(400)
+    article = {
+        'id': articles[-1]['id'] + 1,
+        'hat': request.json['hat'],
+        'title': request.json['title'],
+        'summary': request.json.get('summary', "")
+    }
+    articles.append(article)
+    return jsonify({'article': article}), 201
+
+
 if __name__ == '__main__':
     app.run(debug=True)
