@@ -8,15 +8,31 @@ articles = [
     {
         'id': 1,
         'hat': u'hands on',
-        'title': u'Criando um projeto full stack com HTML, CSS e API Python',
-        'summary': u'Montes, lacus, laoreet commodo egestas amet eget laoreet. Amet et', 
+        'title': u'Criamos uma API Python usando Flask',
+        'summary': u'O que vcs acharam do Flask', 
     },
     {
         'id': 2,
         'hat': u'Heads Off',
-        'title': u'Live',
-        'summary': u'lorem lorem lorem lorem', 
+        'title': u'Aqui está a Integração',
+        'summary': u'Artigos da nossa API... Lembra o que a Livia Mostrou?', 
     }
+    {
+        'id': 3,
+        'hat': u'hands on',
+        'title': u'O Que é Mais Dificil em ser DEV?',
+        'summary': u'Viver é dificil!', 
+    }
+    {
+        'id': 4,
+        'hat': u'Heads Off',
+        'title': u'Então é Isso?',
+        'summary': u'Quanto mais aprendemos, percebemos que não sabemos nada!', 
+    }
+    'id': 5,
+        'hat': u'Heads Off',
+        'title': u'Sua Vez',
+        'summary': u'Aprender e compartilhar - Assim como a verdade, de graça recebemos de graça compartilhamos!',
 ]
 
 @app.route('/techtalk/api/v1.0/articles', methods=['GET'])
